@@ -1,5 +1,3 @@
-//Question 7.3
-
 public class Line{
     static double epsilon = 0.000001;
     public double slope;
