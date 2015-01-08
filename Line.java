@@ -1,4 +1,4 @@
-//Question 7.3
+// Question 7.3 answered
 
 public class Line{
     static double epsilon = 0.000001;

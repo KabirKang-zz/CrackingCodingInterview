@@ -1,3 +1,4 @@
+//Question 1.2 answered
 #include <iostream>
 using namespace std;
 void reverse(char* str)
