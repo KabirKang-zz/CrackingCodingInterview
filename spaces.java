@@ -1,10 +1,33 @@
 public class spaces{
-    public static void spaceReplace(String str, int length)
+    public static void spaceReplace(char[] str, int length)
     {
+	int count = 0;
+	int totalLen = str.length;
+	int i = 0;
+	//for(i = 0;i<length;i++) if(str[i] == ' ') count++;
+	//totalLen = length + 2*count;
+	str[length] = '\0';
+	for(i = length-1;i>=0;i--)
+	    {
+		if(str[i] == ' '){
+		    str[totalLen - 1] = '0';
+		    str[totalLen - 2] = '2';
+		    str[totalLen - 3] = '%';
+		    totalLen -= 3;
+		}
+		else{
+		    str[totalLen - 1] = str[i];
+		    totalLen--;
+		}
+	    }
     }
     public static void main(String[] args)
     {
-	System.out.println("Hello world");
+	String str = "Mr John Smith    ";
+	char[] charArray = str.toCharArray();
+	int length = 13;
+	spaceReplace(charArray,length);
+	System.out.println(charArray);
     }
 }
 
