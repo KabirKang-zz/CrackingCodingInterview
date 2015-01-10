@@ -1,0 +1,9 @@
+14.1 In terms of inheritance, what is the effect of keeping a constructor private?
+
+What can access the private methods of a class C? Other than C itself, the inner classes 
+of C can access C's private methods and constructor. Also, if C is an inner class of B,
+then B's other inner classes can access the private constructor.
+
+How does this affect inheritance?
+Class C can only be inherited by its or its parents inner classes. This is important
+due to the fact that subclasses call the constructors of their parents.
