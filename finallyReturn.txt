@@ -1,0 +1,7 @@
+14.2 In Java, does the finally block get executed if we insert a return statement inside
+the try block of a try-catch-finally?
+
+Finally is used with try/catch and guarantees that a section of code will be executed even 
+in the event of an exception. 
+The finally block will still be exectuted despite the return statement. Finally
+executes before return of control to origin.
