@@ -1,0 +1,17 @@
+14.3 What is the difference between final, finally, and finalize?
+
+Final:
+For variable primitives, it means the value of the variable cannot change.
+For variable references, the reference variable cannot point to any other object on
+the heap.
+For methods, the method cannot be overriden.
+For classes, the class cannot be subclassed.
+
+Finally:
+You can use finally as a part of try-catch. Statements in the finally block will always
+be exectuted, unless the try block exits.
+
+Finalize():
+The finalize method is called by the garbage collector when it determines that no
+more references exist. It is usually used to clean up resources.
+A class can override the finalize method in order to define custom behavior.
